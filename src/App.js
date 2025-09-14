@@ -109,7 +109,7 @@ import Hero from "./Hero";
 import AboutSection from "./Compoents/about";
 import RehmanServices from "./Compoents/RehmanServices";
 import About2 from "./Compoents/AboutSection";
-
+import TitleUpdated from './TitleUpdated'
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -131,7 +131,7 @@ function App() {
 
   return (
     <div className="App">
-           
+           <TitleUpdated/>
       <Navbar />
       <Icon />
 
