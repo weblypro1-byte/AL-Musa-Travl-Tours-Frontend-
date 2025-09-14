@@ -1,147 +1,178 @@
-// // src/App.js
-// import React, { useState } from 'react';
-// import { useEffect } from "react";
-// import Footer from './footer';
-// import Navbar from './Navbar.js';
-// import ImageSlider from './ImageSlider.jsx';
-// import VideoCarousel from './VideoCarousel.jsx'
-// import Form from './form.js'
-// import './App.scss';
-// import Loader from "./Loader.js";
-// import Home from "./Home.js"; // your main page
-// import Course from './courses.js'
-// import RecentBlogs from "./blogs";
-// import Icon from './icons.js';
-// import WhyChoose from './whychoose.js';
-// import Universities from './universities.js';
-// import Backbutton from './Backbutton.js';
-// import Steps from './steps.js'
-// function App() {
-  
-//   const [loading, setLoading] = useState(true);
 
+
+
+// import "antd/dist/reset.css";
+// import React, { useEffect } from "react";
+// import { Routes, Route } from "react-router-dom";
+// import Navbar from "./header";
+// import Footer from "./footer";
+// import Home from "./Home";
+// import Services from "./Expertise";
+// import Testimonials from "./Testimonials";
+// import Contact from "./Contactform";
+// import ServicesPage from "./ServicesPage";
+// import WhatsappPortal from "./Compoents/WhatsappPortal";
+// import About from "./About/About";
+// import Subscribe from "./Compoents/SubscribeCard";
+// import Features from "./Compoents/FeaturedTours";
+// import Adventure from "./Compoents/Adventure";
+// import TravelInfo from "./Compoents/TravelInfoPage";
+// import "./App.scss";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import "bootstrap-icons/font/bootstrap-icons.css";
+// import ScrollToTop from "./ScrollToTop";
+
+// import ImageSlider from './Compoents/ImageSlider'
+// import "video-react/dist/video-react.css";
+// import Icon from "./Compoents/icons";
+
+// function App() {
 //   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       setLoading(false);
-//     }, 2500); // loader shows for 2.5s
-//     return () => clearTimeout(timer);
+//     AOS.init({ duration: 600, once: true, easing: "ease-in-out" });
 //   }, []);
+
 //   return (
 //     <div className="App">
-     
+//       <ScrollToTop />
 //       <Navbar />
       
-//       {loading ? <Loader /> : <Home />}
-//       <ImageSlider/>
-//       <WhyChoose/>
-//       <Icon/>
-//       <Course/>
-//       <Universities/>
-//      <Steps/>
-//       <RecentBlogs />
-//       <Form/>
-//       <VideoCarousel />
-//       <Backbutton/>
-   
-//       <Footer />
+//       <Icon />
+      
+//       <main className="main-content">
+//         <Routes>
+//           {/* Home Page (full) */}
+//           <Route path="/" element={<div data-aos="fade-up"><Home /></div>} />
 
-//      </div>
+//           {/* Home sub-pages */}
+//           <Route path="/about" element={<div data-aos="fade-right"><About /></div>} />
+//           <Route path="/features" element={<div data-aos="fade-up"><Features /></div>} />
+//           <Route path="/adventure" element={<div data-aos="fade-up"><Adventure /></div>} />
+//           <Route path="/travel-info" element={<div data-aos="fade-left"><TravelInfo /></div>} />
+//           <Route path="/subscribe" element={<div data-aos="fade-up"><Subscribe /></div>} />
+//           <Route path="/imageslider" element={<div data-aos="fade-left"><ImageSlider /></div>} />
+       
+//           {/* Other standalone pages */}
+//           <Route path="/services" element={<div data-aos="fade-right"><Services /></div>} />
+//           <Route path="/testimonials" element={<div data-aos="fade-up"><Testimonials /></div>} />
+//           <Route path="/contact" element={<div data-aos="fade-left"><Contact /></div>} />
+//           <Route path="/ServicesPage" element={<ServicesPage />} />
+//         </Routes>
+     
+//       </main>
+
+//       <Footer/>
+
+      
+//     </div>
 //   );
 // }
-
-
- 
 
 // export default App;
 
 
-// src/App.js
-import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './footer';
-import Loader from './Loader';
-import Home from './Home';
-import Course from './courses';
-import RecentBlogs from './blogs';
-import Icon from './icons';
-import WhyChoose from './whychoose';
-import Universities from './universities';
-import Backbutton from './Backbutton';
-import Steps from './steps';
-import ImageSlider from './ImageSlider';
-import VideoCarousel from './VideoCarousel';
-import Form from './form';
-import Comments from './comments.js';
-import Aboutus from './About.js'
-import './App.scss';
 
 
-// Future pages
-import UK from './pages/uk';
-import Australia from './pages/australia';
-import Europe from './pages/europe';
-import USA from './pages/usa';
-import OurOffices from './pages/OurOffices.js';
-import Event from './pages/event.js'
+
+
+
+
+
+
+
+//new 
+import "video-react/dist/video-react.css"; 
+
+import "antd/dist/reset.css";
+import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./header";
+import Footer from "./footer";
+import Services from "./Expertise";
+import Testimonials from "./Testimonials";
+import Contact from "./Contactform";
+import ServicesPage from "./ServicesPage";
+import About from "./About/About";
+import Subscribe from "./Compoents/SubscribeCard";
+import Features from "./Compoents/FeaturedTours";
+import Adventure from "./Compoents/Adventure";
+import TravelInfo from "./Compoents/TravelInfoPage";
+import "./App.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import ImageSlider from "./Compoents/ImageSlider";
+import Icon from "./Compoents/icons";
+
+// Sections from Home.js
+import Hero from "./Hero";
+import AboutSection from "./Compoents/about";
+import RehmanServices from "./Compoents/RehmanServices";
+import About2 from "./Compoents/AboutSection";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2500); // Loader duration
+    AOS.init({ duration: 600, once: true, easing: "ease-in-out" });
+
+    // Fake loader for 1.5s
+    const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <div className="spinner"></div>
+      </div>
+    );
+  }
+
   return (
     <div className="App">
+           
       <Navbar />
       <Icon />
 
-      {loading ? (
-        <Loader />
-      ) : (
+     
+      <main className="main-content">
         <Routes>
-          
-          {/* Home page shows directly */}
+          {/* Home Page composed here directly */}
           <Route
             path="/"
             element={
-              <>
-                <Home />
-                <ImageSlider />
-                <WhyChoose />
-                {/* <Icon /> */}
-                <Course />
-                <Universities />
-                <Steps />
-                <Aboutus/>
-                <Form />
-                <Comments/>
-                <VideoCarousel />
-                <RecentBlogs />
-                <Backbutton />
-              </>
+              <div data-aos="fade-up">
+               
+                <section id="hero"><Hero /></section>
+                <section id="about"><AboutSection /></section>
+                <section id="services"><Services /></section>
+                <section id="features"><Features /></section>
+                <section id="image-slider"><ImageSlider /></section>
+                <section id="servis"><RehmanServices /></section>
+                <section id="adventure"><Adventure /></section>
+                <section id="about2"><About2 /></section>
+                <section id="travel"><TravelInfo /></section>
+                <section id="testimonials"><Testimonials /></section>
+                <section id="subscribe"><Subscribe /></section>
+                
+              </div>
             }
           />
 
-          {/* Other pages accessible via navbar links */}
-          <Route path="/courses" element={<Course />} />
-          <Route path="/study-destinations" element={<Universities />} />
-          <Route path="/uk" element={<UK />} />
-          <Route path="/australia" element={<Australia />} />
-          <Route path="/europe" element={<Europe />} />
-          <Route path='/about' element={<Aboutus/>}/>
-          <Route path='/form' element={<Form/>}/>
-          <Route path='/whychoose' element={<WhyChoose/>}/>
-
-
-          <Route path="/usa" element={<USA />} />
-          <Route path="/events" element={<Event />} />
-          <Route path="/blogs" element={<RecentBlogs />} />
-          <Route path="/offices" element={<OurOffices />} />
+          {/* Other pages */}
+          <Route path="/about" element={<div data-aos="fade-right"><About /></div>} />
+          <Route path="/features" element={<div data-aos="fade-up"><Features /></div>} />
+          <Route path="/adventure" element={<div data-aos="fade-up"><Adventure /></div>} />
+          <Route path="/travel-info" element={<div data-aos="fade-left"><TravelInfo /></div>} />
+          <Route path="/subscribe" element={<div data-aos="fade-up"><Subscribe /></div>} />
+          <Route path="/imageslider" element={<div data-aos="fade-left"><ImageSlider /></div>} />
+          <Route path="/services" element={<div data-aos="fade-right"><Services /></div>} />
+          <Route path="/testimonials" element={<div data-aos="fade-up"><Testimonials /></div>} />
+          <Route path="/contact" element={<div data-aos="fade-left"><Contact /></div>} />
+          <Route path="/ServicesPage" element={<ServicesPage />} />
         </Routes>
-      )}
+      </main>
 
       <Footer />
     </div>

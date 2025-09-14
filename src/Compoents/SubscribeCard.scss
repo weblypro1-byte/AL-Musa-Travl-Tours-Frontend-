@@ -1,0 +1,136 @@
+.subscribe-card {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  min-height: 500px;
+  margin: 60px auto;
+
+  &__image {
+    flex: 1.2;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 35px;
+      line-height: 1.6;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 40px;
+    padding: 8px;
+    overflow: hidden;
+
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 16px 20px;
+      font-size: 16px;
+      border-radius: 40px;
+      font-family: inherit;
+      background: transparent;
+    }
+
+    button {
+      background:#f38602;;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 16px 28px;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background:#f37202;
+      }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    background: url("https://www.airhometravels.com/assets/img/home2/abt_sec.png") no-repeat center/cover; 
+    color: #fff;
+
+    &__image {
+      display: none; // hide side image
+    }
+
+    &__content {
+      background: rgba(0, 0, 0, 0.5); // semi-transparent overlay for readability
+      border-radius: 12px;
+      padding: 40px 20px;
+
+      h2, p {
+        color: #fff; // white text for contrast
+      }
+    }
+
+    &__form {
+      flex-direction: column; /* ✅ Stack vertically */
+      gap: 12px;             /* spacing between input & button */
+      background: rgba(255, 255, 255, 0.9);
+      padding: 16px;
+      border-radius: 20px;
+
+      input {
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 16px;
+        color: #000;
+        border-radius: 12px;
+        background: #00000015;
+      }
+
+      button {
+        width: 100%; /* ✅ full width button on mobile */
+        padding: 14px 16px;
+        font-size: 16px;
+        border-radius: 12px;
+        background: #f38602;
+        color: #fff;
+        font-weight: 600;
+
+        &:hover {
+          background: #f37202;
+        }
+      }
+    }
+  }
+
+}

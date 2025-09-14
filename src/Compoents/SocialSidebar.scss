@@ -1,0 +1,110 @@
+
+
+
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+  transition: all 0.3s ease;
+  
+  .sidebar-toggle {
+    width: 40px;
+    height: 40px;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: translateX(-3px);
+    }
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  &.open {
+    .social-links {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px 0 0 8px;
+    background-color: var(--social-color);
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 0 10px var(--social-color);
+    }
+  }
+
+  /* MOBILE STYLES */
+  @media (max-width: 767px) {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    //background: rgba(0,0,0,0.7);
+    border-radius: 0;
+
+    .sidebar-toggle {
+      border-radius: 8px 8px 0 0;
+      margin: 0;
+      z-index: 60;
+    }
+
+    .social-links {
+      flex-direction: row;
+      gap: 10px;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      bottom: 50px; // show above arrow
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s ease;
+      pointer-events: none;
+    }
+
+    &.open .social-links {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .social-link {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: var(--social-color);
+    }
+  }
+}

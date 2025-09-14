@@ -1,4 +1,119 @@
+// /* ---------- Global Reset & Smooth Scroll ---------- */
+// html, body {
+//   margin: 0;
+//   padding: 0;
+//   width: 100%;
+//   /* height: auto; */             /* remove fixed 100% height */
+//   overflow-x: hidden;              /* keep horizontal scroll hidden */
+//   scroll-behavior: smooth;
+//   -webkit-overflow-scrolling: touch;
+//   font-family: 'Poppins', sans-serif;
+//   background-color: #fff;
+// }
+
+// /* Universal box-sizing */
+
+// /* ---------- Main content wrapper ---------- */
+
+
+// /* ---------- Ant Design Toast ---------- */
+// .ant-message {
+//   z-index: 9999 !important;
+// }
+/* ---------- Global Reset & Smooth Scroll ---------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: auto; */             /* remove fixed 100% height */
+  overflow-x: hidden;              /* keep horizontal scroll hidden */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+/* Universal box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Main content wrapper ---------- */
+main {
+  padding-top: 120px; /* matches header height */
+  
+  @media (max-width: 768px) {
+    padding-top: 90px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 70px;
+  }
+}
+
+/* ---------- Ant Design Toast ---------- */
+.ant-message {
+  z-index: 9999 !important;
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #ff6600;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+  // App.scss
+// Smooth scrolling for the entire app
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+// Scroll-to-top button styles (if you want a manual button too)
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border: none;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   }
   
+  @media (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}

@@ -1,0 +1,218 @@
+.travel-page {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+
+  /* Features Section */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: #000;
+    color: #fff;
+    padding: 50px 70px;
+    text-align: center;
+
+    .feature-item {
+      i {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color:    #f38602;;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #ffffff;
+      }
+    }
+  }
+
+  /* Black Section with Form + Image */
+  .form-image-section {
+    display: flex;
+    justify-content: space-between;
+    background: #10132e;
+    padding: 60px;
+    position: relative;
+
+    .booking-form {
+      flex: 1;
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+      /* ✅ overlap half inside black, half outside */
+      position: absolute;
+      top: 100%;
+      left: 180px;
+      transform: translateY(-50%);
+
+      h5 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #111;
+      }
+
+      form {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        input,
+        select {
+          flex: 1;
+          padding: 12px 15px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          font-size: 14px;
+
+          &:focus {
+            border-color: #2563eb;
+          }
+        }
+
+        button {
+          padding: 12px 25px;
+          background: #232329;
+          border: none;
+          color: #fff;
+          font-weight: 500;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:hover {
+            background: #1d4ed8;
+          }
+        }
+      }
+    }
+
+    .hero-image {
+      position: absolute;
+      top: 265%;
+      right: 300px;
+      transform: translateY(-50%); /* ✅ same overlap as form */
+
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      }
+
+      .customer-badge {
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #eb8f25;
+        color: #fff;
+        padding: 1px 5px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 13px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 60px 80px;
+
+    .hero-content {
+      max-width: 800px;
+
+      .tag {
+        color: #eba925;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 12px;
+        display: block;
+      }
+
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+                margin-left: 50px;
+
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 30px;
+        margin-left: 50px;
+      }
+
+      .cta-btn {
+        padding: 14px 28px;
+        background: #ca881ed8;
+        border: none;
+        border-radius: 30px;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+                margin-left: 50px;
+
+
+        &:hover {
+          background: #1d4ed8;
+        }
+      }
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-image-section {
+      display: block;
+      padding: 30px;
+
+      .booking-form,
+      .hero-image {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .features {
+      grid-template-columns: 1fr;
+    }
+    .form-image-section form {
+      flex-direction: column;
+    }
+  }
+}
+
+
+
+
+
+
+

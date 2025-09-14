@@ -1,0 +1,195 @@
+// .video-page {
+//     padding: 60px 20px;
+//     background: #fafafa;
+//     background: transparent;
+  
+//     .container {
+//       max-width: 1200px;
+//       margin: 0 auto;
+//     }
+  
+//     .badge {
+//       display: inline-block;
+//       background: #ff5722;
+//       color: #fff;
+//       padding: 6px 14px;
+//       border-radius: 20px;
+//       font-size: 14px;
+//       margin-bottom: 10px;
+//     }
+  
+//     .title {
+//       font-size: 28px;
+//       font-weight: 600;
+//       margin-bottom: 30px;
+//       color: #222;
+//     }
+  
+//     .video-grid {
+//       display: grid;
+//       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+//       gap: 25px;
+//     }
+  
+//     .video-card {
+//       display: flex;
+//       flex-direction: column;
+//       background: #fff;
+//       border-radius: 12px;
+//       overflow: hidden;
+//       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+//       transition: transform 0.25s ease;
+  
+//       &:hover {
+//         transform: translateY(-6px);
+//       }
+  
+//       .video-thumb {
+//         position: relative;
+//         width: 100%;
+//         aspect-ratio: 9 / 16; // ✅ keeps reel style
+//        background: transparent;
+  
+//         .reel-video {
+//           width: 100%;
+//           height: 100%;
+//           object-fit: cover;
+//           display: block;
+//         }
+  
+//         .overlay {
+//           position: absolute;
+//           bottom: 8px;
+//           right: 8px;
+//           background: rgba(0, 0, 0, 0.6);
+//           color: #fff;
+//           padding: 2px 8px;
+//           border-radius: 6px;
+//           font-size: 12px;
+//           pointer-events: none;
+//         }
+//       }
+  
+//       .video-info {
+//         padding: 12px 15px;
+  
+//         .video-title {
+//           font-size: 16px;
+//           font-weight: 600;
+//           margin-bottom: 6px;
+//           color: #333;
+//         }
+  
+//         .video-views {
+//           font-size: 14px;
+//           color: #777;
+//         }
+//       }
+//     }
+//   }
+  
+//   /* ✅ Responsive */
+//   @media (max-width: 768px) {
+//     .video-page {
+//       padding: 40px 15px;
+  
+//       .title {
+//         font-size: 22px;
+//       }
+  
+//       .video-grid {
+//         gap: 15px;
+//       }
+  
+//       .video-card {
+//         .video-info {
+//           .video-title {
+//             font-size: 14px;
+//           }
+//           .video-views {
+//             font-size: 12px;
+//           }
+//         }
+//       }
+//     }
+//   }
+.reels-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 20px; // more spacing for section look
+    text-align: center;
+  }
+  
+  .reels-heading {
+    margin-bottom: 40px;
+  
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+      position: relative;
+  
+      &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: #ff8400;
+        margin: 15px auto 0;
+        border-radius: 2px;
+      }
+    }
+  
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  .reels-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; // default mobile
+    justify-content: center;
+  }
+  
+  .reel-item {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  
+    .video-react {
+      width: 100%;
+      height: auto; // ✅ adjust height to video
+      border-radius: 16px;
+      object-fit: cover;
+      display: block;
+    }
+  
+    &:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+  
+  /* Tablet view */
+  @media (min-width: 768px) {
+    .reels-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Desktop view */
+  @media (min-width: 1200px) {
+    .reels-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

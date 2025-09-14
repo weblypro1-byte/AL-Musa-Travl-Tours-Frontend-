@@ -1,0 +1,76 @@
+.travel-info {
+  background: linear-gradient(90deg, #243949, #151617);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 80px;
+
+  .info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+
+
+    .info-left,
+    .info-right {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; // smaller gap overall
+
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color:      #f38602;
+        text-transform: uppercase;
+        margin-bottom: 0; // ✅ removes extra space
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #ddd;
+        text-align: justify;
+        margin-top: 0; // ✅ ensures no extra spacing
+      }
+
+      img {
+        width: 100%;
+        height: 350px;
+        border-radius: 8px;
+        object-fit: cover;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+        transition: all 0.3s ease-in-out; // ✅ smooth effect
+
+        &:hover {
+          transform: scale(1.03); // slight zoom
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); // ✅ stronger shadow
+        }
+      }
+    }
+  }
+
+  /* ✅ Responsive */
+  @media (max-width: 992px) {
+    padding: 50px 20px;
+
+    .info-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      .info-left,
+      .info-right {
+        align-items: center;
+
+        p {
+          text-align: center;
+        }
+
+        img {
+          height: 250px;
+        }
+      }
+    }
+  }
+}

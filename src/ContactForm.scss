@@ -1,0 +1,201 @@
+
+
+
+
+// .contact-page {
+//     .hero-section {
+//       background: url("https://media.istockphoto.com/id/1401724826/photo/digital-signature-is-future-of-technology-concept-of-electronic-signature.jpg?s=612x612&w=0&k=20&c=Btnjjtyb-FizR_KV-rRBFCedLGJkQvqPb_EOsBZ6_4Q=") center/cover no-repeat;
+//       height: 70vh;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       text-align: center;
+//       color: white;
+//       position: relative;
+  
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background: rgba(0, 0, 0, 0.6); // Dark overlay
+//       }
+  
+//       .container {
+//         position: relative;
+//         z-index: 1;
+//       }
+  
+//       .hero-title {
+//         font-size: 2.5rem;
+//         font-weight: bold;
+//       }
+  
+//       .hero-subtitle {
+//         font-size: 1.2rem;
+//       }
+//     }
+  
+//     .contact-section {
+//       padding: 60px 0;
+//       background: #ffffff; // Light grey background
+  
+//       .contact-info {
+//         h2 {
+//           font-size: 2rem;
+//           font-weight: bold;
+//           color: #f38602;
+//         }
+  
+//         p {
+//           font-size: 1.1rem;
+//           color: #000000;
+//           margin-bottom: 20px;
+//         }
+  
+//         .info-item {
+//           display: flex;
+//           align-items: center;
+//           margin-bottom: 15px;
+//           font-size: 1.1rem;
+//           color: #000000;
+//           background-color: #ffffff;
+  
+//           .icon {
+//             color: #f38602; // Accent color (orange)
+//             margin-right: 10px;
+//             font-size: 1.5rem;
+//           }
+//         }
+//       }
+  
+//       .contact-form {
+//         background: white;
+//         padding: 30px;
+//         border-radius: 10px;
+//         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  
+//         .submit-btn {
+//           background: #f38602;
+//           border: none;
+//           padding: 10px 20px;
+//           font-size: 1.2rem;
+//           width: 100%;
+//           border-radius: 5px;
+  
+//           &:hover {
+//             background-color: orange !important;
+//             border-color: rgb(255, 106, 0) !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+
+.contact-page {
+  .hero-section {
+    background: url("https://res.cloudinary.com/dslbieqdx/image/upload/v1757769915/about_sbo5hd.png") center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+   
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+  }
+
+  .contact-section {
+    padding: 60px 0;
+    background: #ffffff;
+
+    .contact-info {
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #f38602;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        color: #000000;
+
+        .icon {
+          color: #f38602;
+          margin-right: 10px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .map-container {
+        margin-top: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+        iframe {
+          width: 100%;
+          height: 250px;
+          border: none;
+        }
+      }
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+      .submit-btn {
+        background: #f38602;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        width: 100%;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: orange !important;
+          border-color: rgb(255, 106, 0) !important;
+        }
+      }
+    }
+  }
+}

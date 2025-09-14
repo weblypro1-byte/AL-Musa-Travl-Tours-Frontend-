@@ -1,0 +1,254 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+// .featured-tours {
+//   font-family: "Poppins", sans-serif;
+//   padding: 3rem 1rem;
+//   background: #fefefe;
+
+//   &__title {
+//     text-align: center;
+//     font-size: 2.5rem;
+//     font-weight: 600;
+//     margin-bottom: 2.5rem;
+
+//     span {
+//       color: #f39c12;
+//     }
+//   }
+
+//   &__grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+//     gap: 2rem;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//   }
+// }
+
+// .tour-card {
+//   background: #fff;
+//   border-radius: 12px;
+//   overflow: hidden;
+//   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+//   transition: transform 0.3s ease;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+
+//   &:hover {
+//     transform: translateY(-6px);
+//   }
+
+//   &__image {
+//     height: 200px;
+//     width: 100%;
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   &__tags {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 0.7rem 1rem;
+//     background: #fff;
+//     border-radius: 10px;
+//     position: absolute;
+//     top: 170px;
+//     left: 1rem;
+//     right: 1rem;
+//     z-index: 10;
+//     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+//     span {
+//       font-size: 0.85rem;
+//       font-weight: 500;
+//       color: #000000;
+//       display: flex;
+//       align-items: center;
+//       gap: 5px;
+//       color:  #f38602;;
+
+//       i {
+//         color:  #f38302;
+//       }
+//     }
+//   }
+
+//   &__content {
+//     padding: 3.5rem 1.2rem 1.2rem;
+
+//     h3 {
+//       font-size: 1.25rem;
+//       font-weight: 600;
+//       margin-bottom: 0.3rem;
+//       color: #222;
+//     }
+
+//     .tour-card__location {
+//       color:  #f38602;;
+//       font-size: 0.9rem;
+//       font-weight: 500;
+//       margin-bottom: 0.8rem;
+
+//       i {
+//         margin-right: 6px;
+//       }
+//     }
+
+//     hr {
+//       border: none;
+//       border-top: 1px solid #eee;
+//       margin: 1rem 0;
+//     }
+
+//     .tour-card__description {
+//       font-size: 0.9rem;
+//       color: #555;
+//       line-height: 1.5;
+//       margin-bottom: 1.2rem;
+//     }
+
+//     .tour-card__button {
+//       background-color:   #f38602;;
+//       color: #fff;
+//       padding: 0.6rem 1.2rem;
+//       border: none;
+//       border-radius: 6px;
+//       font-size: 0.9rem;
+//       cursor: pointer;
+//       transition: background 0.3s;
+
+//       &:hover {
+//         background-color:  #f36e02;;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.featured-tours {
+  font-family: "Poppins", sans-serif;
+  padding: 3rem 1rem;
+  background: #fefefe;
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+
+    span {
+      color:    #f38602;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.tour-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  &__image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__tags {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 190px;
+    left: 1rem;
+    right: 1rem;
+    z-index: 10;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    span {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      i {
+        color:   #f38602;
+      }
+    }
+  }
+
+  &__content {
+    padding: 3.5rem 1.2rem 1.2rem;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #222;
+    }
+
+    .tour-card__location {
+      color:    #f38602;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.8rem;
+
+      i {
+        margin-right: 6px;
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 1rem 0;
+    }
+
+    .tour-card__description {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .tour-card__button {
+      background-color:    #f38602;;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color:   #f36e02;;
+      }
+    }
+  }
+}
