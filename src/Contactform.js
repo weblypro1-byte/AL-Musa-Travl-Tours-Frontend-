@@ -262,7 +262,7 @@ export default function ContactPage() {
     setLoading(true);
 
     try {
-      const res = await fetch("https://al-musa-travl-tours-backend-ru8f.vercel.app/api/contact", {
+      const res = await fetch("https://al-musa-travl-tours-backend-dc35.vercel.app/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -272,6 +272,7 @@ export default function ContactPage() {
           phone,
           message: msg,
         }),
+        
       });
 
       const data = await res.json();

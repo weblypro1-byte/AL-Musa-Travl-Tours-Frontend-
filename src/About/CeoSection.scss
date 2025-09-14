@@ -1,0 +1,213 @@
+.ceo-section {
+    padding: 5rem 8%;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    transition: background 0.3s ease;
+  
+    .section-title {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      color: #111;
+      position: relative;
+      opacity: 0;
+      transform: translateY(30px);
+  
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #007bff;
+        margin: 0.8rem auto 0;
+        border-radius: 2px;
+      }
+    }
+  
+    .ceo-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      max-width: 1600px; 
+      
+      margin: 0 auto;
+    }
+  
+    .ceo-image {
+        flex: 1 1 450px;   // increased base size
+        max-width: 550px;   // bigger circle
+        min-width: 400px;  
+  
+      img {
+        width: 100%;
+        
+        aspect-ratio: 4/5;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        border: 5px solid #fff;
+        opacity: 0;
+        transform: scale(0.8);
+      }
+    }
+  
+    .ceo-content {
+      flex: 2 1 500px;
+      opacity: 0;
+      transform: translateX(40px);
+  
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 0.2rem;
+        color: #222;
+      }
+  
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: 1.2rem 0;
+        color: #000000;
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+        color: #333;
+      }
+  
+      // Contact Button
+      .contact-btn {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        background: #ff8800;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(20px);
+  
+        &:hover {
+          background: #ff8400;
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(255, 111, 0, 0.5);
+        }
+      }
+    }
+  
+    // ✅ Animate only when .animate is added
+    &.animate {
+      .section-title {
+        animation: fadeUp 0.8s ease forwards;
+      }
+  
+      .ceo-image img {
+        animation: zoomIn 1s ease forwards;
+        animation-delay: 0.3s;
+      }
+  
+      .ceo-content {
+        animation: slideIn 1s ease forwards;
+        animation-delay: 0.6s;
+  
+        .contact-btn {
+          animation: fadeUp 1s ease forwards;
+          animation-delay: 1s;
+        }
+      }
+    }
+  
+    // Director variation
+    &.director {
+      background: #f9f9f9;
+  
+      .ceo-wrapper {
+        flex-direction: row-reverse;
+      }
+  
+      .section-title::after {
+        background: #ff9800;
+      }
+  
+      .ceo-content {
+        transform: translateX(-40px); // opposite slide
+      }
+  
+      .contact-btn {
+        background: #ff9800;
+  
+        &:hover {
+          background: #e68900;
+          box-shadow: 0 8px 20px rgba(255, 152, 0, 0.5);
+        }
+      }
+    }
+  
+    // Animations
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    // Mobile
+    @media (max-width: 768px) {
+      .ceo-wrapper {
+          max-width: 400px; // scale down on mobile
+    flex: 1 1 350px;
+      }
+    .ceo-image {
+    max-width: 400px; // scale down on mobile
+    flex: 1 1 350px;
+  }
+      .ceo-content {
+        transform: translateY(30px);
+  
+        h3,
+        h4 {
+          text-align: center;
+        }
+  
+        .contact-btn {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }

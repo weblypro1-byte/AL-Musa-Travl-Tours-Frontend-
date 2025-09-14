@@ -134,18 +134,19 @@ const ConsultantSection = ({ heading, name, image, description, whatsapp, slider
 export default function ServicesPage() {
   const sections = [
     {
-      heading: "EUROPE VISA",
-      name: "Ms. Sajida Riaz",
-      image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/default-female-avatar-profile-icon-social-media-chatting-online-user-free-vector_dd17xr.jpg",
-      description: "Our career advisor specializes in helping students identify their strengths and interests...",
-      whatsapp: "923178221448",
-  
+      heading: "ZAYARAT & GULF VISAS",
+      name: "Mr. Agha Zain-ul-Abdeen",
+      image: 'https://res.cloudinary.com/dslbieqdx/image/upload/v1757765491/HR_rgauuh.png',
+      description: "With over 10 years of experience in international education, our consultant provides comprehensive guidance...",
+      whatsapp: "923178221428",
+    
+
       sliderImages: [
-        "https://wallpapercat.com/w/full/1/7/5/1447369-3840x2160-desktop-4k-europe-background-photo.jpg",
-        "https://c4.wallpaperflare.com/wallpaper/313/933/99/sunset-the-city-france-paris-wallpaper-preview.jpg",
-        "https://media.istockphoto.com/id/489776362/photo/berlin-skyline-panorama-with-tv-tower-at-sunset-germany.jpg?s=612x612&w=0&k=20&c=Ng6cNc_9FEtoA1Go3P86ltVsy_-yoAZWcANCQr2ftGs=",
+        "https://res.cloudinary.com/dslbieqdx/image/upload/v1757852991/caption_ju7nwz.jpg",
+           "https://res.cloudinary.com/dslbieqdx/image/upload/v1757853170/LrjuY2Yq-Kuwait-37_1_hncajl.jpg",
+           "https://inminds.com/img/ziyarat-20191225_172035-1280.jpg",
       ],
-      captions: ["Germany", "France", "Canada"],
+      captions: ["kuwait", "Saudia Arabia", "Iraq"],
     },
     {
       heading: "WORK VISAS & TICKETS",
@@ -161,32 +162,18 @@ export default function ServicesPage() {
       captions: ["Dubai", "Qatar", "Bahrain"],
     },
     {
-      heading: "ZAYARAT & GULF VISAS",
-      name: "Mr. Agha Zain-ul-Abdeen",
-      image: 'https://res.cloudinary.com/dslbieqdx/image/upload/v1757765491/HR_rgauuh.png',
-      description: "With over 10 years of experience in international education, our consultant provides comprehensive guidance...",
-      whatsapp: "923178221428",
-      captions: ["Mecca", "Medina", "Jeddah"],
-
+      heading: "EUROPE VISA",
+      name: "Ms. Sajida Riaz",
+      image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/default-female-avatar-profile-icon-social-media-chatting-online-user-free-vector_dd17xr.jpg",
+      description: "Our career advisor specializes in helping students identify their strengths and interests...",
+      whatsapp: "923178221448",
+  
       sliderImages: [
-        "https://inminds.com/img/ziyarat-20191225_172035-1280.jpg",
-           "https://b2bzend.s3.ap-south-1.amazonaws.com/img/53032/package/images/iraq-ziyarat-package_1721908344",
-           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRFXd182Mlb5_I14tv3Hs-bYWr9vbDhXCu--leWeZ_LAtSyvEsth7mzdoYiR15JQnCm7M&usqp=CAU",
+        "https://res.cloudinary.com/dslbieqdx/image/upload/v1757854761/123385867_998454090641532_593194232207253126_n_r9ne0o.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/313/933/99/sunset-the-city-france-paris-wallpaper-preview.jpg",
+        "https://media.istockphoto.com/id/489776362/photo/berlin-skyline-panorama-with-tv-tower-at-sunset-germany.jpg?s=612x612&w=0&k=20&c=Ng6cNc_9FEtoA1Go3P86ltVsy_-yoAZWcANCQr2ftGs=",
       ],
-      captions: ["Iraq", "Baghdad", "Palestine"],
-    },
-    {
-      heading: "VISIT VISAS",
-      name: "Ms. Satiba Asif",
-      image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/person-gray-photo-placeholder-woman-vector-22964655_1_unbdwr.webp",
-      description: "Visit visa requirements can be complex and stressful. Our visa specialist has extensive knowledge...",
-      whatsapp: "923178221426",
-      sliderImages: [
-        "https://res.cloudinary.com/dslbieqdx/image/upload/v1757768419/a_tlhdpq.jpg",
-        "https://www.sarahdegheselle.com/wp-content/uploads/2020/10/AdobeStock_282381041-1-1024x683.jpeg",
-        "https://seasonsforthesoul.com/wp-content/uploads/2020/06/usa-my-country-my-people.jpg?w=444&h=621",
-      ],
-      captions: ["UK", "Italy", "USA"],
+      captions: ["Germany", "France", "Canada"],
     },
     {
       heading: "UMRAH & HAJJ",
@@ -214,6 +201,22 @@ export default function ServicesPage() {
       ],
       captions: ["Turkey", "Maldives", "Romania"],
     },
+  
+    {
+      heading: "VISIT VISAS",
+      name: "Ms. Satiba Asif",
+      image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/person-gray-photo-placeholder-woman-vector-22964655_1_unbdwr.webp",
+      description: "Visit visa requirements can be complex and stressful. Our visa specialist has extensive knowledge...",
+      whatsapp: "923178221426",
+      sliderImages: [
+        "https://res.cloudinary.com/dslbieqdx/image/upload/v1757768419/a_tlhdpq.jpg",
+        "https://www.sarahdegheselle.com/wp-content/uploads/2020/10/AdobeStock_282381041-1-1024x683.jpeg",
+        "https://seasonsforthesoul.com/wp-content/uploads/2020/06/usa-my-country-my-people.jpg?w=444&h=621",
+      ],
+      captions: ["UK", "Italy", "USA"],
+    },
+   
+  
  
   ];
 

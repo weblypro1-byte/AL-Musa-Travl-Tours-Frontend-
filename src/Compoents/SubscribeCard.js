@@ -74,7 +74,7 @@ const SubscribeCard = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("https://al-musa-travl-tours-backend-ru8f.vercel.app/api/subscribe", {
+      const res = await fetch("https://al-musa-travl-tours-backend-dc35.vercel.app/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

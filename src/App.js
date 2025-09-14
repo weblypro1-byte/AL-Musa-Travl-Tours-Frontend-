@@ -103,7 +103,7 @@ import "aos/dist/aos.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ImageSlider from "./Compoents/ImageSlider";
 import Icon from "./Compoents/icons";
-
+import CEO from './About/ceo';
 // Sections from Home.js
 import Hero from "./Hero";
 import AboutSection from "./Compoents/about";
@@ -171,6 +171,7 @@ function App() {
           <Route path="/testimonials" element={<div data-aos="fade-up"><Testimonials /></div>} />
           <Route path="/contact" element={<div data-aos="fade-left"><Contact /></div>} />
           <Route path="/ServicesPage" element={<ServicesPage />} />
+          <Route path="/ceo" element={<CEO />} />
         </Routes>
       </main>
 

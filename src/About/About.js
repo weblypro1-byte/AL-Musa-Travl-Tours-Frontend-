@@ -8,8 +8,7 @@ import "swiper/css/navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./WhyUsPage.scss";
 import VideoSection from './VideoSection.js'
-import { Link } from "react-router-dom";
-
+import CEO from './ceo.js'
 import Testimonials from "../Testimonials";
 
 const WhyUsFullPage = () => {
@@ -182,50 +181,7 @@ const WhyUsFullPage = () => {
         </div>
       </section>
 {/* CEO */}
-<section className="ceo-section">
-  <div className="container">
-    <h2 className="section-title">MEET OUR CEO</h2>
-    <div className="ceo-wrapper">
-      <div className="ceo-image">
-        <img
-          src="https://res.cloudinary.com/dslbieqdx/image/upload/v1757766409/WhatsApp_Image_2025-09-13_at_5.24.20_PM_ssydpw.jpg"
-          alt="CEO - Musa Al Raza Travel & Tours"
-        />
-      </div>
-      <div className="ceo-content">
-        <h3>FAISAL HUSSAIN</h3>
-
-        <p>
-          Hi, I’m Musa Al Raza, the Chief Executive Officer (CEO) of{" "}
-          <strong>Musa Al Raza Travel & Tours</strong>, a leading travel and
-          tourism company dedicated to making your journeys seamless,
-          memorable, and stress-free.
-        </p>
-        <p>
-          With years of experience in the travel industry, my mission has
-          always been to help individuals, families, and businesses explore
-          the world with trust and convenience. At Musa Al Raza Travel &
-          Tours, we pride ourselves on offering customized travel packages,
-          visa assistance, and guided tours that cater to the unique needs of
-          every client.
-        </p>
-        <p>
-          I strongly believe that travel is not just about destinations—it’s
-          about creating experiences that last a lifetime. That’s why our team
-          is committed to providing the highest level of service,
-          transparency, and customer care. Whether you’re planning a family
-          holiday, a business trip, or an adventure abroad, we’re here to make
-          it a reality.
-        </p>
-
-        {/* Read More Button */}
-        <Link to="/contact" className="read-more-btn">
-  Read More <i className="fas fa-arrow-right"></i>
-</Link>
-      </div>
-    </div>
-  </div>
-</section>
+<CEO/>
 
       <Testimonials />
     </div>

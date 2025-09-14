@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Replace these with your real image URLs
 const carouselImages = [
- 'https://res.cloudinary.com/dslbieqdx/image/upload/v1757766409/WhatsApp_Image_2025-09-13_at_5.12.44_PM_oqs0ho.jpg',
+ 'https://res.cloudinary.com/dslbieqdx/image/upload/v1757851583/Copy_of_uk_4_uo8bwq.png',
  'https://res.cloudinary.com/dslbieqdx/image/upload/v1757766355/WhatsApp_Image_2025-09-13_at_5.06.43_PM_ow1ism.jpg',
  'https://res.cloudinary.com/dslbieqdx/image/upload/v1757766354/WhatsApp_Image_2025-09-13_at_5.00.26_PM_wt3m9q.jpg'
 ];
