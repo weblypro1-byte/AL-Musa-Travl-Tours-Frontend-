@@ -23,7 +23,7 @@ const SocialSidebar = () => {
     { name: 'instagram', url: 'https://www.instagram.com/musa.alraza_tandt?igsh=d2t6cTNpODdnZDF2', icon: <FaInstagram size={20} />, color: '#E4405F' },
     { name: 'linkedin', url: 'https://www.linkedin.com/', icon: <FaLinkedin size={20} />, color: '#0A66C2' },
     { name: 'tiktok', url: 'https://www.tiktok.com/@musa.al.raza.tandt?_t=ZS-8uHj7S7wE1w&_r=1', icon: <FaTiktok size={20} />, color: '#000000' },
-    { name: 'youtube', url: 'https://www.youtube.com/@KARWANEMUSAALRAZA', icon: <FaYoutube size={20} />, color: '#FF0000' }
+    { name: 'youtube', url: 'https://www.youtube.com/@MUSAALRAZA', icon: <FaYoutube size={20} />, color: '#FF0000' }
   ];
 
   return (
