@@ -140,7 +140,7 @@ const WhyUsFullPage = () => {
                   <FaPhoneAlt size={18} />
                 </div>
                 <p className="section-text mb-0 ms-2 me-3">
-                  <strong>Call experts:</strong> 0317 8221428 | 031782214462 |
+                  <strong>Call experts:</strong> 0317 8221428 | 03178221446 |
                   03178221448
                 </p>
                 <button
