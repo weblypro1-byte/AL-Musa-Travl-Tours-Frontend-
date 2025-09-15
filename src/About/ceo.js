@@ -37,7 +37,7 @@ const CeoSection = () => {
               <img src="https://res.cloudinary.com/dslbieqdx/image/upload/v1757766409/WhatsApp_Image_2025-09-13_at_5.24.20_PM_ssydpw.jpg" alt="CEO - Musa Al Raza Travel & Tours" />
             </div>
             <div className="ceo-content">
-              <h3>FAISAL HUSSAIN</h3>
+              <h3> HAJI FAISAL HUSSAIN </h3>
               <h4>Chief Executive Officer</h4>
               <p>
                 Hi, I’m Faisal Hussain, the Chief Executive Officer (CEO) of{" "}
