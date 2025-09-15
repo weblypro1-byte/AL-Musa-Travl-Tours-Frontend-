@@ -40,8 +40,8 @@ const tours = [
   {
     title: "Baghdad Heritage Tour",
     location: "Baghdad, Iraq",
-    duration: "7 Days",
-    availability: "October - April",
+    duration: "12 Days",
+    availability: "Whole Year",
     description:
       "Explore the rich cultural and historical sites of Baghdad, including ancient mosques, vibrant bazaars, and the Tigris River.",
     image:

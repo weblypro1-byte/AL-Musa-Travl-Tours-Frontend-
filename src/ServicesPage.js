@@ -50,7 +50,7 @@ const ServicesStyles = () => (
   .text-container { flex:1; text-align:center; padding:1rem; }
   @media (min-width:768px) { .text-container { text-align:left; padding:0 2rem; } }
 
-  .consultant-name { font-size:1.3rem; font-weight:700; color:var(--primary-color); margin-bottom:1rem; }
+  .consultant-name { font-size:2rem; font-weight:700; color:var(--primary-color); margin-bottom:1rem; }
   .text-container p { font-size:1.1rem; line-height:1.7; color:var(--secondary-color); margin-bottom:2rem; }
 
   .whatsapp-btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.8rem 1.8rem; background: var(--accent-color); color:white; text-decoration:none; border-radius:50px; font-weight:600; font-size:1rem; transition:var(--transition); box-shadow:0 4px 15px rgba(34,197,94,0.3); }
@@ -78,6 +78,14 @@ const ServicesStyles = () => (
     background: rgba(0,0,0,0.6); color:white; padding:0.5rem 0; font-weight:600;
     font-size:1rem; transition: 0.3s;
   }
+    .consultant-designation {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  // font-style: italic;
+}
+
   // .slide:hover .slide-caption { background: rgba(0,0,0,0.8); font-size:1.05rem; }
   `}</style>
 );
@@ -110,7 +118,7 @@ const ImageSlider = ({ images, captions }) => (
 );
 
 // ========== Consultant Section ==========
-const ConsultantSection = ({ heading, name, image, description, whatsapp, sliderImages, reverse, captions }) => (
+const ConsultantSection = ({ heading, name, designation, image, description, whatsapp, sliderImages, reverse, captions }) => (
   <section className={`consultant-section ${reverse ? "reverse" : ""}`}>
     <h2 className="section-heading">{heading}</h2>
 
@@ -121,6 +129,7 @@ const ConsultantSection = ({ heading, name, image, description, whatsapp, slider
 
       <div className="text-container" >
         <h3 className="consultant-name">{name}</h3>
+        {designation && <h4 className="consultant-designation">{designation}</h4>} 
         <p>{description}</p>
         <WhatsAppButton number={whatsapp} message={`Hello, I need guidance regarding ${heading}`} />
       </div>
@@ -136,6 +145,7 @@ export default function ServicesPage() {
     {
       heading: "ZAYARAT & GULF VISAS",
       name: "Mr. Agha Zain-ul-Abdeen",
+      designation: "HR Department", 
       image: 'https://res.cloudinary.com/dslbieqdx/image/upload/v1757765491/HR_rgauuh.png',
       description: "With over 10 years of experience in international education, our consultant provides comprehensive guidance...",
       whatsapp: "923178221428",
@@ -151,6 +161,7 @@ export default function ServicesPage() {
     {
       heading: "WORK VISAS & TICKETS",
       name: "Ms. Mishal Shoukat",
+      designation: "Manager", 
       image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/gray-woman-placeholder-portrait-vector-24005404_fvymfj.avif",
       description: "We make work visas for Europe and Gulf countries fast and hassle-free...",
            whatsapp: "923178221446",
@@ -164,6 +175,7 @@ export default function ServicesPage() {
     {
       heading: "EUROPE VISA",
       name: "Ms. Sajida Riaz",
+      designation: "C.o.o.", 
       image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/default-female-avatar-profile-icon-social-media-chatting-online-user-free-vector_dd17xr.jpg",
       description: "Our career advisor specializes in helping students identify their strengths and interests...",
       whatsapp: "923178221448",
@@ -178,6 +190,7 @@ export default function ServicesPage() {
     {
       heading: "UMRAH & HAJJ",
       name: "Ms. Gulnaz",
+      designation: "Accountant", 
       image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767807/person-gray-photo-placeholder-woman-vector-22964655_w7vemu.webp",
       description: "We simplify Umrah and Hajj visas for a fast and hassle-free process...",
       whatsapp: "923178221425",
@@ -191,6 +204,7 @@ export default function ServicesPage() {
     {
       heading: "TOURIST VISAS",
       name: "Ms. Muqadas Bibi",
+      designation: "Supervisor", 
       image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/b5912c28fd86525fa96d03bb78e020af_xa1gwx.jpg",
       description: "Simplifying your visit visa process with expert guidance for a stress-free travel experience...",
            whatsapp: "923178221447",
@@ -205,6 +219,9 @@ export default function ServicesPage() {
     {
       heading: "VISIT VISAS",
       name: "Ms. Satiba Asif",
+      
+      designation: "Social Media Coordinator ", 
+
       image: "https://res.cloudinary.com/dslbieqdx/image/upload/v1757767806/person-gray-photo-placeholder-woman-vector-22964655_1_unbdwr.webp",
       description: "Visit visa requirements can be complex and stressful. Our visa specialist has extensive knowledge...",
       whatsapp: "923178221426",

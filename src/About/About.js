@@ -11,6 +11,7 @@ import VideoSection from './VideoSection.js'
 import CEO from './ceo.js'
 import Testimonials from "../Testimonials";
 
+
 const WhyUsFullPage = () => {
   const sliderCards = [
     {
@@ -139,10 +140,15 @@ const WhyUsFullPage = () => {
                   <FaPhoneAlt size={18} />
                 </div>
                 <p className="section-text mb-0 ms-2 me-3">
-                  <strong>Call experts:</strong> 0309 1111311 | 0301 3334562 |
-                  0331 3334562
+                  <strong>Call experts:</strong> 0317 8221428 | 031782214462 |
+                  03178221448
                 </p>
-                <button className="learn-more-btn">Contact Us</button>
+                <button
+  className="learn-more-btn"
+  onClick={() => (window.location.href = "/contact")}
+>
+  Contact Us
+</button>
               </div>
             </div>
             <div className="col-md-6 text-center">
